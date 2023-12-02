@@ -5,7 +5,7 @@ from collections.abc import Callable
 from typing import Any, TypeVar, get_type_hints
 
 from fastapi import APIRouter, Depends
-from pydantic.typing import is_classvar
+from pydantic._internal._typing_extra import is_classvar
 from starlette.routing import Route, WebSocketRoute
 
 T = TypeVar("T")
